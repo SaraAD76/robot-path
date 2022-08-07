@@ -14,6 +14,7 @@ the database hold record of the angles in in degrees and the date and time for t
 here is the recording table:
 
 ![db](https://user-images.githubusercontent.com/68463958/183272129-9b677ba6-25c5-401d-90cd-f0ef426a43a5.png )
+note: the purpose here is simply to record the movements in raw form.
 
 languages: php, javascript, html and css.
 database: mysql.
