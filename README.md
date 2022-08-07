@@ -14,9 +14,10 @@ After the path is recorded it's then submitted to a database.
 
 the database hold record of the angles in in degrees and the date and time for that recording.
 
-here is the recording table:
+here is how the data should look in the recording table:
 
-![db](https://user-images.githubusercontent.com/68463958/183272129-9b677ba6-25c5-401d-90cd-f0ef426a43a5.png )
+![db](https://user-images.githubusercontent.com/68463958/183272709-59133d19-beac-484e-b15a-086524cfec0b.png)
+
 
 note: the purpose here is simply to record the movements in raw form.
 
