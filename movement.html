@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>robot path</title>
+        <style>
+            body{position: static;/*do not change*/}
+            h1{position: relative;margin: 2rem; text-align: center;}
+            div{ position: static;/*do not change*/ display: grid;
+            grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 150px 150px 150px;
+            grid-template-areas: '. forward .'
+            'left center right''. backward .';
+            margin: 5%;
+            align-self: stretch;align-content: center;
+            }
+            input.button{position: relative;
+            width: 5rem;
+            height: 5rem;
+            }
+            .forward{grid-area: forward; justify-self: center;align-self:center}
+            .backward{grid-area: backward; justify-self: center;align-self:center}
+            .left{grid-area: left;justify-self: center;align-self:center}
+            .right{grid-area: right;justify-self: center;align-self:center}
+            .angleButton{grid-area: center; justify-self: center;align-self:center;background-color: red;
+            z-index: 1; border-radius: 50%;height: 25;width: 25;}
+            .angleArea{grid-area: center;
+            border-radius: 50%; background-color: rgb(203, 203, 203);
+            justify-self: stretch;align-self: stretch;
+             }
+        </style>
+        <script src ="movement.js"></script>
+    </head>
+    <body>
+        <h1>Move the Robot</h1>
+        <form id="form" action="movement.php" method="get">
+            <div>
+                <input type="button" class="button forward" id="forward" value="forward" onclick="record(90)">
+                <input type="button" class="button left" id="left"  value="left" onclick="record(180)">
+                <input type="button" draggable='true' class="angleButton " id="angleButton" >
+                <span  class="angleArea " id="angleArea" ondragover="getAngle(event)"></span>
+                <input type="button" class="button right" id="right"  value="right"onclick="record(0)">
+                <input type="button" class="button backward" id="backward" value="backward"onclick="record(270)">
+            </div>
+            <input type="text" hidden name='date' id='date' ></input>
+            <input type="text" hidden name='time' id='time' ></input>
+            <input type="text" hidden name='path' id='path' ></input>
+            <input type="submit" hidden></input>
+        </form> 
+    </body>
+</html>
