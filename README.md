@@ -6,7 +6,7 @@ It has five buttons :
 
 -dragging button that takes any angle using mouse movement
 
-here is the interface:
+here is how the buttons look:
 
 ![move](https://user-images.githubusercontent.com/68463958/183272392-4ad02ae4-059a-4932-8939-fcdab66ecdeb.png)
 
